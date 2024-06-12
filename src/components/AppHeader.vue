@@ -13,8 +13,8 @@ export default{
         <nav class="navbar bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                <img src="../assets/img/logo.png" alt="Logo" width="50" height="34" class="d-inline-block align-text-top">
-                Bootstrap
+                <img src="../assets/img/logo.jpg" alt="Logo" width="50" height="34" class="d-inline-block align-text-top">
+                Yu-Gi-Oh
                 </a>
             </div>
         </nav>
