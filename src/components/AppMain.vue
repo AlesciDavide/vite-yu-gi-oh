@@ -17,10 +17,10 @@ export default{
     },
     methods:{
         getCards(){
-            axios.get('https://db.ygoprodeck.com/api/v7/cardinfo.php?num=20&offset=0').then(response => {
+            axios.get('https://db.ygoprodeck.com/api/v7/cardinfo.php?num=40&offset=0').then(response => {
                 this.store.cards = response.data;
                 console.log(store.cards.data);
-                this.isLoader = true;
+                
             })
             .catch(function (error) {
                 // handle error
@@ -29,11 +29,19 @@ export default{
             .finally(function () {
                 // always executed
             });
+        },
+        Delay(){
+            setTimeout(() => {
+                this.isLoader = true;
+            }, 5000)
         }
     },
     created(){
         this.getCards();
-        console.log(store.length);
+        
+    },
+    mounted(){
+        this.Delay();
     }
 }
 </script>
@@ -68,11 +76,13 @@ export default{
     width: 80%;
     margin: 0 auto;
     background-color: white;
+    padding: 1rem 0;
 
     h3{
             background-color: black;
             color: white;
             padding: .5rem 0;
+            margin-bottom: 0;
         }
 }
 
