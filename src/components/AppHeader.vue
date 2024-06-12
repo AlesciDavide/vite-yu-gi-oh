@@ -10,7 +10,14 @@ export default{
 
 <template>
     <header>
-        <h1>app header</h1>
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                <img src="../assets/img/logo.png" alt="Logo" width="50" height="34" class="d-inline-block align-text-top">
+                Bootstrap
+                </a>
+            </div>
+        </nav>
     </header>
 </template>
 
