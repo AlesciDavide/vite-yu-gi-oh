@@ -37,8 +37,10 @@ export default{
 
 <template>
     <main >
-        <section class="p-5">
-            <MainListCards/>
+        <section class="my_container d-flex">
+            <div class="my_container_cards d-flex">
+                <MainListCards />
+            </div>
         </section>
     </main>
 </template>
@@ -46,5 +48,19 @@ export default{
 <style lang="scss" scoped>
 main{
     background-color: #d48f38;
+    padding-top: 3rem;
 }
+
+.my_container{
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.my_container_cards{
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+
 </style>
