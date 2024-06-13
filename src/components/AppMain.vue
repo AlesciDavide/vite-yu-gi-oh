@@ -61,7 +61,7 @@ export default{
             <MainSearch @changecard="getCards()"/>
             <section  class="my_container">
                 <h3>
-                    Found {{ }} cards
+                    Found {{store.cards.data.length}} cards
                 </h3>
                 
                 <div class="my_container_cards d-flex">
