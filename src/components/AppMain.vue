@@ -23,6 +23,11 @@ export default{
         getCards(){
             
             axios.get('https://db.ygoprodeck.com/api/v7/cardinfo.php?archetype=' + store.archetypeSelected).then(response => {
+                this.isLoader = false;
+                setTimeout(() => {
+                    this.isLoader = true;
+                }, 300);
+        
                 this.store.cards = response.data;
                 console.log(response.data);
                 
@@ -35,11 +40,7 @@ export default{
                 // always executed
             });
         },
-        Delay(){
-            setTimeout(() => {
-                this.isLoader = true;
-            }, 300)
-        },
+        
         
     },
     created(){
@@ -47,10 +48,6 @@ export default{
         
         
     },
-    mounted(){
-        this.Delay();
-        
-    }
 }
 </script>
 

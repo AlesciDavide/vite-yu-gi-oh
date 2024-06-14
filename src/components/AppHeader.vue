@@ -13,7 +13,7 @@ export default{
         <nav class="navbar bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                <img src="../assets/img/logo.jpg" alt="Logo" width="50" height="34" class="d-inline-block align-text-top">
+                <img src="../assets/img/logo.png" alt="Logo"  class="d-inline-block">
                 Yu-Gi-Oh
                 </a>
             </div>
@@ -22,5 +22,11 @@ export default{
 </template>
 
 <style scoped>
-
+    a{
+        font-size: 3.5rem;
+    }
+    img{
+        width: 120px;
+        height: 60px;
+    }
 </style>
